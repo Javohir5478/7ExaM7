@@ -1,0 +1,112 @@
+  .header_container {
+    width: 1440px;
+    height: 80px;
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    background-color: #faf5f5;
+    padding-left: 100px;
+
+    ul {
+        display: flex;
+        padding-right: 500px;
+        li {
+            list-style-type: none;
+            padding: 8px;
+             color: black;
+                font-family: Muli;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 25px;
+                background-color: #fff;
+                cursor: pointer;
+                gap: 10px;
+                    background: transparent;
+                    border: 1px solid #faf5f5;
+                    outline: none;
+                    transition: 1s ease-in-out;
+                /* 166.667% */
+        }
+                li:hover {
+                    transition: 0,7s ease-in-out;
+                    background: #000;
+                    color:#fff;
+                }
+        
+                li:hover svg {
+                    stroke-dashoffset: -480;
+                }
+        
+                li span {
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 100;
+                }
+
+
+
+        // li:hover {
+        //     background: #000;
+        //     color:#fff
+        // }
+           
+        
+    }
+       
+    h4 {
+        list-style-type: none;
+            padding: 8px 8px;
+            border: 3px solid #fff;
+            background-color: #fff;
+            color: black;
+            font-family: Muli;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25px;
+            justify-content: end;
+    }
+          h4:hover {
+              background: #000;
+              color: #fff
+          }
+          
+   .search_header{
+    margin-top: 30px;
+    padding-left: 200px;
+   
+}
+
+
+
+  }
+
+
+
+  .login_container {
+      width: 1440px;
+      padding-left: 370px;
+      background: #faf5f5;
+      height: 500px;
+  }
+
+  .login_container #h2 {
+      color: #232536;
+      padding-left: 200px;
+      /* Heading H1 */
+      font-family: Sen;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 64px;
+      /* 133.333% */
+      letter-spacing: -2px;
+      padding-right: 240px;
+  }
+
+  .login_container .Form_login {
+      margin-top: 100px;
+  }
+
+  /*# sourceMappingURL=Error.css.map */
