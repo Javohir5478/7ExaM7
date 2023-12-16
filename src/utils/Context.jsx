@@ -38,6 +38,10 @@ const AppProvider =({children}) =>{
   const newItem = data.find((item) => item.id===id);
   setBasket([...basket,newItem]);
 };
+//  const handleDelete =(id) => {
+//   const newItem = data.find((item) => item.id!==id);
+//   setBasket([basket]);
+// };
 
 
 

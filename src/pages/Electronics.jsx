@@ -1,13 +1,11 @@
 
 import { useGlobalContext } from "../utils/Context";
-import {useDispatch} from "react-redux";
 
 import "./Pages.scss"
 import "./Category.scss"
-import { handleEditSubmit } from "../redux/todoApp";
 const Electronics = () => {
 
-   const {data} = useGlobalContext();
+   const {data,handleBasket} = useGlobalContext();
 
 
 
@@ -46,7 +44,7 @@ const newData = data.filter((data) => data.category === "electronics" )
            <h2>{title}</h2>
             <p>{description}</p>         
              <p>{price}</p> 
-             <button className="category_btn">+ Add to Basket</button>
+             <button onClick={() => handleBasket(item.id)} className="category_btn">+ Add to Basket</button>
 
              </div>
              {/* <button className='btn btn-danger btn-md delete-all'

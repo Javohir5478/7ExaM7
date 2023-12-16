@@ -164,11 +164,12 @@
 
 }
 .popular_card {
+
     background-color: #fff;
     width: 305px;
     height: 666px;
     flex-shrink: 0;
-    border:4px solid #FFF;
+    border:4px solid rgb(59, 59, 231);
 
 
     img {
@@ -216,6 +217,14 @@
         width: 305px;
     }
 }
+.popular_card:hover {
+    background-color: rgb(59, 59, 231);
+    h1,p,h4 {
+        color:#fff;
+    }
+
+}
+
 
 .container_homepage-body {
 
@@ -270,10 +279,14 @@
 
     .choose_card:hover {
         background-color: #FFD050;
+        h1 {
+            color:#faf5f5;
+        }
     }
 
     .choose_card {
-        background-color: #fff;
+        border:3px solid #FFD050;
+        background-color: #FFF;
         width: 296px;
         height: 221.072px;
         flex-shrink: 0;

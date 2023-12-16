@@ -1,6 +1,7 @@
 import { useGlobalContext } from "../utils/Context";
-import "./Pages.scss"
-import "./Category.scss"
+import {Link} from "react-router-dom";
+import "./Pages.scss";
+import "./Category.scss";
 
 
 
@@ -40,7 +41,7 @@ const ForWomen = () => {
            <h2>{title}</h2>
             <p>{description}</p>         
              <p>{price}</p> 
-             <button onClick={() => handleBasket(item.id)} className="category_btn">+ Add to Basket</button>
+            <Link><button onClick={() => handleBasket(item.id)} className="category_btn">BUY NOW</button></Link>
 
              </div>
              {/* <button className='btn btn-danger btn-md delete-all'

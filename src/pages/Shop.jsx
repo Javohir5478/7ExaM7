@@ -1,15 +1,13 @@
 
 
 import { useGlobalContext } from "../utils/Context";
-import {useDispatch} from "react-redux";
 
 import "./Pages.scss"
 import "./Category.scss"
-import { handleEditSubmit } from "../redux/todoApp";
 
 const Shop = () => {
 
-  const {data} = useGlobalContext();
+  const {data,handleBasket} = useGlobalContext();
   return (
     <div className="business_container">
         
@@ -38,7 +36,7 @@ const Shop = () => {
            <h2>{title}</h2>
             <p>{description}</p>         
              <p>{price}</p> 
-             <button className="category_btn">+ Add to Basket</button>
+            <button onClick={() => handleBasket(item.id)} className="category_btn">+ Add to Basket</button>
 
              </div>
              {/* <button className='btn btn-danger btn-md delete-all'
